@@ -11,6 +11,10 @@ body {
   margin: 0px auto;
 }
 
+header {
+  margin-top: 22px !important;
+}
+
 section {
   margin: 2% auto;
 }
@@ -65,9 +69,6 @@ section {
   text-align: right;
 }
 
-.padding {
-  padding: 22px 0px;
-}
 
 .padding-left {
   padding-left: 10%;
@@ -122,6 +123,10 @@ section {
   border-bottom: 0.5px solid #eee;
 }
 
+.border-b {
+  border-bottom: 0.5px solid #eee;
+}
+
 .svg-wrap {
   width: 24px;
   height: 24px;
@@ -140,7 +145,7 @@ section {
 
 .team-vs {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   z-index: 9;
 }
 
@@ -174,14 +179,9 @@ section {
 
 .team1,
 .team2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+  width: 90px;
   height: 100%;
-  flex-direction: column;
   position: relative;
-  row-gap: 16px;
 }
 
 .team-name {
@@ -216,11 +216,10 @@ section {
 #score-filter {
   display: grid;
   padding: 16px 32px;
-  flex-wrap: wrap;
-  gap: 12px;
-  flex-direction: column;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 3vw), 1fr));
-  width: 100%;
+  gap: 8px;
+  row-gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 46px), 1fr));
+  width: 78%;
 }
 
 .score-board {
@@ -313,8 +312,16 @@ section {
   margin: 0px;
 }
 
-footer .padding {
+.padding {
+  padding: 1% 0px 3% 0px;
+}
+
+.padding-footer {
   padding: 2% 0px;
+}
+
+.border-radius5 {
+  border-radius: 5px;
 }
 
 .copyright-container p:first-child {
@@ -328,9 +335,13 @@ footer .padding {
 
 footer {
   font-size: 14px;
-  background: #eee;
+
   border-radius: 16px;
   margin: 40px auto;
+}
+
+.background-eee {
+  background: #eee;
 }
 
 .correct-score {
@@ -355,6 +366,22 @@ footer {
 }
 
 @media (max-width: 768px) {
+  header img {
+    margin-top: 22px !important;
+  }
+
+  .border-b {
+    border-bottom: 0px !important;
+  }
+
+  .passMsg {
+    width: 100% !important;
+  }
+
+  footer {
+    display: none;
+  }
+
   .errorMsg {
     width: 100% !important;
   }
@@ -372,8 +399,9 @@ footer {
   #score-filter {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    margin: 4% auto;
+    margin: 44px auto 20px auto;
     padding: 0px !important;
+    width: 100%;
   }
 
   .ingame-wrap {
@@ -460,7 +488,7 @@ footer {
 
   .ccol .ccol-3 img {
     border-radius: 5px;
-    width: 42px;
+    width: 66px;
     margin-right: 15px;
   }
 

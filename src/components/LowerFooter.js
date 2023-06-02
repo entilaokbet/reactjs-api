@@ -5,8 +5,8 @@ const LowerFooter = () => {
     return (
         <>
             <footer>
-                <div className="container padding">
-                    <div className="grid grid-align-center">
+                <div className="container border-radius5 background-eee">
+                    <div className="grid grid-align-center padding-footer ">
                         <div className="logo-container padding-left">
                             <a href="https://okbet.com" target="_blank">
                                 <img
